@@ -1,2 +1,3 @@
-# wz_gold_price
- Gold Price Widget for Wordpress
+# WZ Gold Price
+
+Gold Price Widget for Wordpress
