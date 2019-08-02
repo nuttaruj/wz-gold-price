@@ -1,0 +1,109 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/* CSS For Mobile < 992px and All */
+#wz-gpw {
+  width: 100%;
+  display: inline-block;
+  border: 2px solid #dbb96a;
+  padding: 22px;
+}
+
+#wz-gpw * {
+  text-align: center;
+}
+
+#wz-gpw-title {
+  display: block;
+  text-align: left;
+  font-size: 25px;
+}
+
+#wz-gpw-date {
+  display: block;
+  text-align: left;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+#wz-gpw-img {
+  width: 25%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+#wz-gpw-img img {
+  width: 70%;
+}
+
+#wz-gpw-text {
+  width: 25%;
+  float: left;
+  font-size: 15px;
+  line-height: 45px;
+  min-height: 100px;
+}
+
+#wz-gpw-price {
+  width: 40%;
+  float: left;
+  font-size: 25px;
+  min-height: 100px;
+}
+
+#wz-gpw-alert {
+  width: 10%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  min-height: 100px;
+}
+/* End Mobile */
+
+/* CSS For Tablet > 992px */
+@media (min-width: 768px) {
+  #wz-gpw-title {
+    font-size: 30px;
+  }
+
+  #wz-gpw-date {
+    font-size: 23px;
+  }
+
+  #wz-gpw-name {
+    font-size: 25px;
+  }
+
+  #wz-gpw-text {
+    font-size: 20px;
+    line-height: 63px;
+  }
+
+  #wz-gpw-price {
+    font-size: 35px;
+  }
+
+  #wz-gpw-alert {
+    font-size: 30px;
+  }
+}
+
+/* CSS for Desktop > 1200px */
+@media (min-width: 1200px) {
+  #wz-gpw {
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 270px;
+  }
+
+  #wz-gpw-img img {
+    width: 55%;
+  }
+}
