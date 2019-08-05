@@ -5,7 +5,7 @@
  * Plugin Name:       Gold Price Widget
  * Plugin URI:        https://walnutztudio.com
  * Description:       Gold Price(THB) Widget for Wordpress
- * Version:           1.0.1
+ * Version:           1.1.0
  * Author:            WalnutZtudio
  * Author URI:        https://walnutztudio.com
  * License:           GPL-2.0+
@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'WZ_GOLD_PRICE_VERSION', '1.0.1' );
+define( 'WZ_GOLD_PRICE_VERSION', '1.1.0' );
 
 /**
  * The code that runs during plugin activation.
@@ -53,12 +53,6 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-wz_gold_price.php';
 
 /**
  * Begins execution of the plugin.
- *
- * Since everything within the plugin is registered via hooks,
- * then kicking off the plugin from this point in the file does
- * not affect the page life cycle.
- *
- * @since    1.0.1
  */
 function run_wz_gold_price() {
 
