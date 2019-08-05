@@ -3,9 +3,9 @@
 /**
  * @wordpress-plugin
  * Plugin Name:       Gold Price Widget
- * Plugin URI:        https://walnutztudio.com
+ * Plugin URI:        https://github.com/nuttaruj/wz-gold-price
  * Description:       Gold Price(THB) Widget for Wordpress
- * Version:           1.1.0
+ * Version:           1.1.1
  * Author:            WalnutZtudio
  * Author URI:        https://walnutztudio.com
  * License:           GPL-2.0+
@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'WZ_GOLD_PRICE_VERSION', '1.1.0' );
+define( 'WZ_GOLD_PRICE_VERSION', '1.1.1' );
 
 /**
  * The code that runs during plugin activation.
@@ -72,3 +72,5 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 
 //Optional: Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('master');
+
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
