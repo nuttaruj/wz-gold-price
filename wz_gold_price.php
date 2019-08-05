@@ -80,3 +80,14 @@ function run_wz_gold_price() {
 
 }
 run_wz_gold_price();
+
+
+require 'vendor/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/nuttaruj/wz-gold-price/',
+	__FILE__,
+	'wz_gold_price'
+);
+
+//Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
