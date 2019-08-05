@@ -9,13 +9,13 @@
  * that starts the plugin.
  *
  * @link              https://walnutztudio.com
- * @since             1.0.0
+ * @since             1.0.1
  * @package           Wz_gold_price
  *
  * @wordpress-plugin
  * Plugin Name:       Gold Price Widget
  * Plugin URI:        https://walnutztudio.com
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Gold Price(THB) Widget for Wordpress
  * Version:           1.0.0
  * Author:            WalnutZtudio
  * Author URI:        https://walnutztudio.com
@@ -32,10 +32,8 @@ if ( ! defined( 'WPINC' ) ) {
 
 /**
  * Currently plugin version.
- * Start at version 1.0.0 and use SemVer - https://semver.org
- * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WZ_GOLD_PRICE_VERSION', '1.0.0' );
+define( 'WZ_GOLD_PRICE_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.
@@ -71,7 +69,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-wz_gold_price.php';
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.0.0
+ * @since    1.0.1
  */
 function run_wz_gold_price() {
 
