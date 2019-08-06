@@ -154,7 +154,7 @@ function wz_gold_price_api( $atts ){
 		"ธันวาคม"
 	);
 		$monthnum = (date("n",$time));
-		$thai_date_return = (date("j",$time)+1);
+		$thai_date_return = date("j",$time);
 		$thai_date_return.=" ".$thai_month_arra[date("n",$time)];
 		$thai_date_return.= " ".(date("Y",$time)+543);
 		return $thai_date_return;
