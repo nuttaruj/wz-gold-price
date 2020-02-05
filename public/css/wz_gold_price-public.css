@@ -13,6 +13,7 @@
 
 #wz-gpw * {
   text-align: center;
+  font-family: sans-serif;
 }
 
 #wz-gpw-title {
@@ -29,35 +30,20 @@
 }
 
 #wz-gpw-img {
-  width: 25%;
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100px;
-}
-#wz-gpw-img img {
   width: 70%;
+  display: block;
+  margin: auto;
 }
 
 #wz-gpw-text {
-  width: 25%;
-  float: left;
   font-size: 15px;
-  line-height: 45px;
-  min-height: 100px;
 }
 
 #wz-gpw-price {
-  width: 40%;
-  float: left;
   font-size: 25px;
-  min-height: 100px;
 }
 
 #wz-gpw-alert {
-  width: 10%;
-  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,6 +51,13 @@
   min-height: 100px;
 }
 /* End Mobile */
+
+/* CSS For Tablet > 992px */
+@media (max-width: 576px) {
+  #wz-gpw-img {
+    width: 30%;
+  }
+}
 
 /* CSS For Tablet > 992px */
 @media (min-width: 768px) {
@@ -82,15 +75,14 @@
 
   #wz-gpw-text {
     font-size: 20px;
-    line-height: 63px;
   }
 
   #wz-gpw-price {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   #wz-gpw-alert {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -100,10 +92,8 @@
     width: 100%;
     display: block;
     margin: auto;
-    height: 270px;
   }
-
-  #wz-gpw-img img {
-    width: 55%;
+  #wz-gpw-img {
+    width: 50%;
   }
 }

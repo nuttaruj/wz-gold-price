@@ -97,7 +97,7 @@ class Wz_gold_price_Public {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wz_gold_price-public.js', array( 'jquery' ), $this->version, false );
-
+		wp_enqueue_style( 'walnutz-gold-price', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap-grid.min.css', true );
 	}
 
 }

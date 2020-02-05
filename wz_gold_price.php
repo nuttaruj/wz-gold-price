@@ -58,9 +58,11 @@ function run_wz_gold_price() {
 
 	$plugin = new Wz_gold_price();
 	$plugin->run();
-
+	
 }
 run_wz_gold_price();
+
+
 
 
 require 'vendor/plugin-update-checker/plugin-update-checker.php';

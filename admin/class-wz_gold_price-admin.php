@@ -183,12 +183,34 @@ function wz_gold_price_api( $atts ){
 	
 
 		if ($val->{'name'} == "สมาคมฯ"){
-			echo "<div id='wz-gpw-img'><img src='".$logo."'></div>";
-			//echo "<div id='wz-gpw-name'><span>".$val->{'name'."</span></div>";
-			echo "<div id='wz-gpw-text'><span>ขายออก</span><br><span>รับซื้อ</span></div>";
-			echo "<div id='wz-gpw-price'><span>".$val->{'bid'}."</span><br>";
-			echo "<span>".$val->{'ask'}."</span></div>";
-			echo "<div id='wz-gpw-alert'><span>".$val->{'diff'}."</span></div>";
+			echo "<div class='container'>
+			<div class='row'>
+			  <div class='col-xl col-12 col-sm-3'>
+				  <img id='wz-gpw-img' src='".$logo."'>
+			  </div>
+			  <div class='col-xl-5 col-9 col-sm-7'>
+				  <div class='row'>
+					  <div class='col-xl-6 col-6'>
+						  <span id='wz-gpw-text'>รับซื้อ</span>
+					  </div>
+					  <div class='col-xl-6 col-6'>
+						  <span id='wz-gpw-price'>".$val->{'bid'}."</span>
+					  </div>
+				  </div>
+				  <div class='row'>
+					  <div class='col-xl-6 col-6'>
+						  <span id='wz-gpw-text'>ขายออก</span>
+					  </div>
+					  <div class='col-xl-6 col-6'>
+						  <span id='wz-gpw-price'>".$val->{'ask'}."</span>
+					  </div>
+				  </div>
+			  </div>
+			  <div class='col-xl col-3 col-sm'>
+				  <span id='wz-gpw-alert'>".$val->{'diff'}."</span>
+			  </div>
+			</div>
+		  </div>";
 		}
 	}
 
