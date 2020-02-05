@@ -185,10 +185,10 @@ function wz_gold_price_api( $atts ){
 		if ($val->{'name'} == "สมาคมฯ"){
 			echo "<div class='container'>
 			<div class='row'>
-			  <div class='col-xl col-12 col-sm-3'>
+			  <div class='col-xl-3 col-12 col-sm-3'>
 				  <img id='wz-gpw-img' src='".$logo."'>
 			  </div>
-			  <div class='col-xl-5 col-9 col-sm-7'>
+			  <div class='col-xl-7 col-9 col-sm-7'>
 				  <div class='row'>
 					  <div class='col-xl-6 col-6'>
 						  <span id='wz-gpw-text'>รับซื้อ</span>
